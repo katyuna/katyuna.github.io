@@ -20,8 +20,8 @@ expenses.item = obligatorily;
 expenses.amount = howMuch;
 appData.surelyExpenses = expenses;
 
-console.log(expenses);
-console.log(appData);
+//console.log(expenses);
+//console.log(appData);
 
 
 var oneDaymoney = howMuch/30;
