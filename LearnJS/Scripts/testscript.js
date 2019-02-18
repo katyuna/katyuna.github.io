@@ -66,7 +66,7 @@ console.log (decr1--);
 
 //== - сравнение, === - строгое сравнение по типам данных
 console.log ("2" == 2); //true
-console.log ("2" === 2); //false*/
+console.log ("2" === 2); //false
 
 // И ИЛИ
 let isCheked = true,
@@ -77,5 +77,74 @@ console.log (isCheked && isClose); //true
 console.log (isCheked && isAnotherOne); //false
 console.log (isCheked || isClose); //true
 console.log (isCheked || isAnotherOne); //true
+*/
+
+//УСЛОВИЯ if проверяет на true т.е. если верно поэтому if(1) всегда будет true
+/*var num=50;
+if (num<49) {
+    console.log ('Мало')
+} else if (num>100){
+    console.log('Много')
+} else {
+    console.log('Верно')
+};
+//более короткая запись
+(num == 50) ? console.log ('Верно') : console.log ('Не верно')
+
+//Если много ветвлени1
+swith (num) { //ЧТО мы проверяем - в данном случае переменную num
+    case num < 49 : 
+        console.log ('Мало'); //условие : Дествие в случае его выполнения
+        break;
+    case num > 100 :
+        console.log('Много');
+        break;
+    case 50 : //особенность! если мы проверяем на соответсвие значению, то просто записываем это значение
+        console.log ('Верно');
+        break;
+    default :
+        console.log ('Ни одно из условий');
+        break;
+
+}*/
+
+//ЦИКЛЫ
+//При помощи цикла for выведите чётные числа от 2 до 10.
+for (var i = 1; i <= 10; i++) {
+    if (i % 2 == 1) continue; //не выводить четные значения
+    console.log(i);
+  };
+
+  var i=0;
+  while (i<3){
+      i++;
+      console.log("номер " + i + "!")
+  };
+//Напишите цикл, который предлагает prompt ввести число, большее 100. 
+//Если посетитель ввёл другое число – попросить ввести ещё раз, и так далее.
+  /*var num;
+  do {
+    num = prompt("Введите число больше 100?", 0);
+  } while (num <= 100 && num != null);*/
+
+  //Создайте код, который выводит все простые числа из интервала от 2 до 10. Результат должен быть: 2,3,5,7.
+ // n - простое, если при делении на любое число от 2 до n-1 есть остаток.
+ /*nextPrime:
+ for (var i = 2; i <= 10; i++) {
+
+   for (var j = 2; j < i; j++) {
+     if (i % j == 0) continue nextPrime;
+   }
+
+   console.log ( i ); // простое
+ };*/
+ //DO
+let num = 50;
+do {
+  console.log (num);
+  num++;
+} 
+while (num < 55);
+
 
 

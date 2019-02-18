@@ -1,14 +1,26 @@
 'use strict';
 
-//let x = 5; 
-//console.log(x++);
+var money = +prompt('Сколько вам лет?', '');
+var time= prompt('Введите дату в формате YYYY-MM-DD', '');
 
-//let y = 1; 
-////let x = y = 2; 
-//console.log(x); 
-//let x = [ ] + false - null + true;
-//let x=[ ] + 1 + 2;
-// console.log( "1"[0] );
-//console.log (2 && 1 && null && 0 && undefined );
-//console.log(x);
+var appData = {
+    allMoney: money,
+    timeData: time,
+    expenses: {},
+    optionalExpenses: {},
+    income: [],
+    savings: false
+};
+
+
+for (i = 0; i < 2;i++){
+    let a = prompt('Введите обязательную статью расходов в этом месяце', '');
+    let b = +prompt('Во сколько обойдется?', '');
+    appData.expenses[a]=b;
+}
+
+console.log(appData);
+
+var oneDaymoney = (a1+a2)/30;
+alert('Бюджет на один день: ' + +oneDaymoney);
 
