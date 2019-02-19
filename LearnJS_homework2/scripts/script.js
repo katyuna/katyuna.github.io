@@ -12,7 +12,7 @@ var appData = {
     savings: false
 };
 
-/*for (let i = 0; i < 2;i++){
+for (let i = 0; i < 2;i++){
     let a = prompt('Введите обязательную статью расходов в этом месяце', '');
     let b = +prompt('Во сколько обойдется?', '');
     if ((typeof(a)) === 'string' && (typeof(a)) != null && (typeof(b)) != null
@@ -22,7 +22,7 @@ var appData = {
     } else {
         continue;
     }
- };*/
+ };
  /*let i = 0;
  while(i<2){
     let a = prompt('Введите обязательную статью расходов в этом месяце', '');
@@ -37,7 +37,7 @@ var appData = {
 
  };*/
 
- let i=0;
+ /*let i=0;
  do 
  {
     let a = prompt('Введите обязательную статью расходов в этом месяце', '');
@@ -50,7 +50,7 @@ var appData = {
         continue;
     }
 
- } while (i<2);
+ } while (i<2);*/
 
 
 
