@@ -110,7 +110,7 @@ swith (num) { //ЧТО мы проверяем - в данном случае п
 
 //ЦИКЛЫ
 //При помощи цикла for выведите чётные числа от 2 до 10.
-for (var i = 1; i <= 10; i++) {
+/*for (var i = 1; i <= 10; i++) {
     if (i % 2 == 1) continue; //не выводить четные значения
     console.log(i);
   };
@@ -119,7 +119,7 @@ for (var i = 1; i <= 10; i++) {
   while (i<3){
       i++;
       console.log("номер " + i + "!")
-  };
+  };*/
 //Напишите цикл, который предлагает prompt ввести число, большее 100. 
 //Если посетитель ввёл другое число – попросить ввести ещё раз, и так далее.
   /*var num;
@@ -139,12 +139,100 @@ for (var i = 1; i <= 10; i++) {
    console.log ( i ); // простое
  };*/
  //DO
-let num = 50;
+/*let num = 50;
 do {
   console.log (num);
   num++;
 } 
-while (num < 55);
+while (num < 55);*/
 
 
+//Переписать с помощью if
+/*switch (browser) {
+    case 'IE':
+      alert( 'О, да у вас IE!' );
+      break;
+  
+    case 'Chrome':
+    case 'Firefox':
+    case 'Safari':
+    case 'Opera':
+      alert( 'Да, и эти браузеры мы поддерживаем' );
+      break;
+  
+    default:
+      alert( 'Мы надеемся, что и в вашем браузере все ок!' );
+  }*/
 
+  /*var browser = prompt('Введите свой браузер','IE/Chrome/Firefox/Safari/Opera/other');
+  if(browser == 'IE'){
+    alert( 'О, да у вас IE!' );
+  } else if (browser == 'Chrome' || browser == 'Firefox' || browser == 'Safari' || browser == 'Opera'){
+    alert( 'Да, и эти браузеры мы поддерживаем' );
+  } else {
+    alert( 'Мы надеемся, что и в вашем браузере все ок!' );
+  };*/
+
+  //Перепишите код с использованием одной конструкции switch:
+
+ /* var a = +prompt('a?', '');
+ 
+ if (a == 0) {
+   alert( 0 );
+ }
+ if (a == 1) {
+   alert( 1 );
+ }
+ 
+ if (a == 2 || a == 3) {
+   alert( '2,3' );
+ }*/
+ /*var a = +prompt('a?', '');
+ switch (a) { 
+    case 0: 
+        console.log ('0');
+        break;
+    case 1:
+        console.log('1');
+        break;
+    case 2:
+    case 3:
+        console.log ('2,3');
+        break;
+default :
+        console.log ('Ни одно из условий');
+        break;
+}*/
+
+//Задача «Hello World» для функций :)
+//Напишите функцию min(a,b), которая возвращает меньшее из чисел a,b.
+/*
+
+var a = +prompt('а= ', ''),
+    b = +prompt('b= ', '');
+function min (a,b){
+    if (a<b){
+        return a;
+    } else {
+        return b;
+    }
+};
+console.log(min(a,b));*/
+//Напишите функцию pow(x,n), которая возвращает x в степени n. 
+//Иначе говоря, умножает x на себя n раз и возвращает результат.
+/*var x = +prompt('x = ', ''),
+    n = +prompt('n= ', '');
+function pow (x,n) {
+    for (var i = 1; i < n; i++){
+        var result = x;
+        result *= x;
+    }
+    return result;
+};
+console.log(pow (x,n));*/
+
+
+function calc (a,b){
+
+    
+}
